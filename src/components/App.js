@@ -140,7 +140,7 @@ class App extends Component {
         {this.state.wrongNetwork
           ? <div className="container-fluid mt-5 text-monospace text-center mr-auto ml-auto">
               <div className="content mr-auto ml-auto">
-                <h1>Please Enter Rinkeby Network</h1>
+                <h1>Please Enter Rinkeby Network and connect Manually from Metamask</h1>
               </div>
             </div>
           : this.state.loading 
@@ -161,6 +161,10 @@ class App extends Component {
                   web3={this.state.web3}
                 />
         }
+        <strong>
+          <p className="text-center text-monospace">
+            If loading icons persists, check you are connected to rinkeby testnet and connect this site Manually from metamaskt</p>
+        </strong>
       </div>
     );
   }
